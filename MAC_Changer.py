@@ -29,7 +29,7 @@ def mudar_mac(interface, novo_mac):
 # Função que pega o valor do MAC address atual da interface
 def pegar_mac_atual(interface):
     resultado_ifconfig = subprocess.check_output(["ifconfig", interface])
-    resultado_busca_mac_atual = re.search(r"\w\w:\w\w:\w\w:\w\w:\w\w:\w\w", resultado_ifconfig)
+    resultado_busca_mac_atual = re.search(r"\w\w:\w\w:\w\w:\w\w:\w\w:\w\w", str(resultado_ifconfig))
     if resultado_busca_mac_atual:
         return resultado_busca_mac_atual.group(0)
     else:
