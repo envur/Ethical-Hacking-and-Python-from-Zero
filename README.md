@@ -1,2 +1,2 @@
-# MAC-changer-in-python
-Simple program to change one's MAC address. Coded in python.
+# Ethical Hacking and Python From Scratch
+Repository with all the projects made on zSecurity's course "Learn Ethical Hacking and Python From Scratch" 
