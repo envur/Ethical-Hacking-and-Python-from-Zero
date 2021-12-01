@@ -35,9 +35,7 @@ def scan(ip):
 	arp_broadcast_ips = broadcast_MAC/target_ips
 	
 	# Scanning the network:
-	answered_list = scapy.srp(arp_broadcast_ips,
-							  timeout=2,
-							  verbose=False)[0]
+	answered_list = scapy.srp(arp_broadcast_ips, timeout=2, verbose=False)[0]
 	
 	"""
 	Appending the results of the scan to a list of dicts
@@ -46,8 +44,7 @@ def scan(ip):
 	"""
 	answers_data_list = []
 	for answer in answered_list:
-		answers_data_list.append({"ip": answer[1].psrc,
-								  "mac": answer[1].hwsrc})
+		answers_data_list.append({"ip": answer[1].psrc, "mac": answer[1].hwsrc})
 		
 	return answers_data_list
 ```
