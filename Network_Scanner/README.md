@@ -1,6 +1,6 @@
 # Network Scanner
 
-This is the second software created in the course, it's a very simple network scanner made with basics of the Scapy library.
+This is the second software created in the course, it's a very simple network scanner made with the basics of the Scapy library.
 
 ## Using it
 
